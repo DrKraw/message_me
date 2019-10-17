@@ -6,35 +6,9 @@
 <div class="ui two column grid">
   <div class="twelve wide column">
     <div class="ui fluid raised card chatbox">
-      <div class="content">
-        <div class="ui small feed">
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                <em>Christian Rocha</em>: Test message blah blah blah hello how are ye :)
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                 <em>Christian Rocha</em>: Test message blah blah blah hello how are ye :)
-              </div>
-            </div>
-          </div>
-          <div class="event">
-            <div class="content">
-              <div class="summary">
-                <em>Christian Rocha</em>: Test message blah blah blah hello how are ye :)
-              </div>
-            </div>
-          </div>
+      <div class="content" id="messages">
+        <div class="ui feed" id="message-container">
+          <%= render @messages %>
         </div>
       </div>
       <div class="extra content">
@@ -42,13 +16,13 @@
           <div class="field">
             <div class="ui fluid icon input">
               <input type="text" placeholder="Enter a message...">
-              <i class="bordered inverted orange edit icon"></i>
+              <i class="bordered inverted orange eidt icon"></i>
             </div>
           </div>
         </form>
       </div>
-   </div>
-</div>
+    </div>
+  </div>
 
 <div class="four wide column">
     <div class="ui fluid raised card chatbox">
